@@ -1,0 +1,4 @@
+{
+	"microfrontendA": "http://localhost:4201/remoteEntry.json",
+	"microfrontendB": "http://localhost:4202/remoteEntry.json"
+}
