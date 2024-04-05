@@ -1,9 +1,30 @@
-<h2 style="text-align: center;">Your {{ title }} app is running. 🎉</h2>
-<nav>
-  <ul>
-    <li><a routerLink="/" routerLinkActive="active">Home</a></li>
-    <li><a routerLink="/microfrontend-a" routerLinkActive="active">Micro Frontend app A</a></li>
-    <li><a routerLink="/microfrontend-b" routerLinkActive="active">Micro Frontend app B</a></li>
-  </ul>
-</nav>   
-<router-outlet></router-outlet>
+<div class="container">
+  <header class="title-bar">
+    <h2 class="text-success" style="text-align: center">
+      Your {{ title }} app is running. 🎉
+    </h2>
+  </header>
+  <nav class="nav-bar">
+    <ul>
+      <div class="d-flex justify-content-around">
+        <li><a routerLink="/" routerLinkActive="active">Home</a></li>
+        <li>
+          <a routerLink="/microfrontend-a" routerLinkActive="active"
+            >M.Frontend A</a
+          >
+        </li>
+        <li>
+          <a routerLink="/microfrontend-b" routerLinkActive="active"
+            >M.Frontend B</a
+          >
+        </li>
+      </div>
+    </ul>
+  </nav>
+  <main class="body-part">
+    <router-outlet></router-outlet>
+  </main>
+  <footer class="footer" style="text-align: center">
+    <p>Footer</p>
+  </footer>
+</div>

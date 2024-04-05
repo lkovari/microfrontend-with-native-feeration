@@ -7,7 +7,7 @@
     "build": "ng build",
     "start-b": "ng serve microfrontend-b -o",
     "start-a": "ng serve microfrontend-a -o",
-    "start-s": "ng serve shell -o",    
+    "start-s": "ng serve shell -o",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
@@ -22,6 +22,8 @@
     "@angular/platform-browser": "^17.1.0",
     "@angular/platform-browser-dynamic": "^17.1.0",
     "@angular/router": "^17.1.0",
+    "@ng-bootstrap/ng-bootstrap": "^16.0.0",
+    "bootstrap": "^5.3.3",
     "es-module-shims": "^1.5.12",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",

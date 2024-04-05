@@ -16,7 +16,13 @@
 			"architect": {
 				"build": {
 					"builder": "@angular-architects/native-federation:build",
-					"options": {},
+					"options": {
+						"styles": [
+							"projects/shell/src/styles.scss",						
+							"node_modules/bootstrap/scss/bootstrap.scss"						
+						],
+						"scripts": []						
+					},
 					"configurations": {
 						"production": {
 							"target": "shell:esbuild:production"
@@ -57,7 +63,8 @@
 							"projects/shell/src/assets"
 						],
 						"styles": [
-							"projects/shell/src/styles.scss"
+							"projects/shell/src/styles.scss",
+							"node_modules/bootstrap/scss/bootstrap.scss"
 						],
 						"scripts": []
 					}
@@ -79,7 +86,8 @@
 							"projects/shell/src/assets"
 						],
 						"styles": [
-							"projects/shell/src/styles.scss"
+							"projects/shell/src/styles.scss",
+							"node_modules/bootstrap/scss/bootstrap.scss"
 						],
 						"scripts": []
 					},

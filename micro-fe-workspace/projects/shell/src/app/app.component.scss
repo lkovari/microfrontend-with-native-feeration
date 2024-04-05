@@ -1,3 +1,25 @@
-ul {
-    list-style-type: none;
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.title-bar,
+.nav-bar,
+.footer {
+  flex: 0 0 auto; 
+  border: 1px solid #23f0f0;
+  border-radius: 10px;
+}
+
+.body-part {
+  flex: 1 0 auto; 
+  border: 1px solid #23f0f0;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.nav-bar ul {
+  list-style-type: none;
+  padding: 0;
 }
