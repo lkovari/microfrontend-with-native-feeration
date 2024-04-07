@@ -1,0 +1,24 @@
+{
+  "imports": {
+    "@angular/animations": "_angular_animations-17_3_3.js",
+    "@angular/animations/browser": "_angular_animations_browser-17_3_3.js",
+    "@angular/common": "_angular_common-17_3_3.js",
+    "@angular/common/http": "_angular_common_http-17_3_3.js",
+    "@angular/compiler": "_angular_compiler-17_3_3.js",
+    "@angular/core": "_angular_core-17_3_3.js",
+    "@angular/core/primitives/signals": "_angular_core_primitives_signals-17_3_3.js",
+    "@angular/core/rxjs-interop": "_angular_core_rxjs_interop-17_3_3.js",
+    "@angular/forms": "_angular_forms-17_3_3.js",
+    "@angular/platform-browser": "_angular_platform_browser-17_3_3.js",
+    "@angular/platform-browser/animations": "_angular_platform_browser_animations-17_3_3.js",
+    "@angular/platform-browser/animations/async": "_angular_platform_browser_animations_async-17_3_3.js",
+    "@angular/platform-browser-dynamic": "_angular_platform_browser_dynamic-17_3_3.js",
+    "@angular/router": "_angular_router-17_3_3.js",
+    "@ng-bootstrap/ng-bootstrap": "_ng_bootstrap_ng_bootstrap-16_0_0.js",
+    "bootstrap": "bootstrap-5_3_3.js",
+    "rxjs": "rxjs-7_8_1.js",
+    "rxjs/operators": "rxjs_operators-7_8_1.js",
+    "tslib": "tslib-2_6_2.js",
+    "shared-lib": "shared_lib-7DAQSYBS.js"
+  }
+}
