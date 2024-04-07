@@ -1,0 +1,234 @@
+{
+  "name": "microfrontend-a",
+  "shared": [
+    {
+      "packageName": "@angular/animations",
+      "outFileName": "_angular_animations-17_3_3-dev.js",
+      "requiredVersion": "^17.1.0",
+      "singleton": true,
+      "strictVersion": true,
+      "version": "17.3.3",
+      "dev": {
+        "entryPoint": "C:/src/Angular/pilot/microfrontend-with-native-feeration/micro-fe-workspace/node_modules/@angular/animations/fesm2022/animations.mjs"
+      }
+    },
+    {
+      "packageName": "@angular/animations/browser",
+      "outFileName": "_angular_animations_browser-17_3_3-dev.js",
+      "requiredVersion": "^17.1.0",
+      "singleton": true,
+      "strictVersion": true,
+      "version": "17.3.3",
+      "dev": {
+        "entryPoint": "C:/src/Angular/pilot/microfrontend-with-native-feeration/micro-fe-workspace/node_modules/@angular/animations/fesm2022/browser.mjs"
+      }
+    },
+    {
+      "packageName": "@angular/common",
+      "outFileName": "_angular_common-17_3_3-dev.js",
+      "requiredVersion": "^17.1.0",
+      "singleton": true,
+      "strictVersion": true,
+      "version": "17.3.3",
+      "dev": {
+        "entryPoint": "C:/src/Angular/pilot/microfrontend-with-native-feeration/micro-fe-workspace/node_modules/@angular/common/fesm2022/common.mjs"
+      }
+    },
+    {
+      "packageName": "@angular/common/http",
+      "outFileName": "_angular_common_http-17_3_3-dev.js",
+      "requiredVersion": "^17.1.0",
+      "singleton": true,
+      "strictVersion": true,
+      "version": "17.3.3",
+      "dev": {
+        "entryPoint": "C:/src/Angular/pilot/microfrontend-with-native-feeration/micro-fe-workspace/node_modules/@angular/common/fesm2022/http.mjs"
+      }
+    },
+    {
+      "packageName": "@angular/compiler",
+      "outFileName": "_angular_compiler-17_3_3-dev.js",
+      "requiredVersion": "^17.1.0",
+      "singleton": true,
+      "strictVersion": true,
+      "version": "17.3.3",
+      "dev": {
+        "entryPoint": "C:/src/Angular/pilot/microfrontend-with-native-feeration/micro-fe-workspace/node_modules/@angular/compiler/fesm2022/compiler.mjs"
+      }
+    },
+    {
+      "packageName": "@angular/core",
+      "outFileName": "_angular_core-17_3_3-dev.js",
+      "requiredVersion": "^17.1.0",
+      "singleton": true,
+      "strictVersion": true,
+      "version": "17.3.3",
+      "dev": {
+        "entryPoint": "C:/src/Angular/pilot/microfrontend-with-native-feeration/micro-fe-workspace/node_modules/@angular/core/fesm2022/core.mjs"
+      }
+    },
+    {
+      "packageName": "@angular/core/primitives/signals",
+      "outFileName": "_angular_core_primitives_signals-17_3_3-dev.js",
+      "requiredVersion": "^17.1.0",
+      "singleton": true,
+      "strictVersion": true,
+      "version": "17.3.3",
+      "dev": {
+        "entryPoint": "C:/src/Angular/pilot/microfrontend-with-native-feeration/micro-fe-workspace/node_modules/@angular/core/fesm2022/primitives/signals.mjs"
+      }
+    },
+    {
+      "packageName": "@angular/core/rxjs-interop",
+      "outFileName": "_angular_core_rxjs_interop-17_3_3-dev.js",
+      "requiredVersion": "^17.1.0",
+      "singleton": true,
+      "strictVersion": true,
+      "version": "17.3.3",
+      "dev": {
+        "entryPoint": "C:/src/Angular/pilot/microfrontend-with-native-feeration/micro-fe-workspace/node_modules/@angular/core/fesm2022/rxjs-interop.mjs"
+      }
+    },
+    {
+      "packageName": "@angular/forms",
+      "outFileName": "_angular_forms-17_3_3-dev.js",
+      "requiredVersion": "^17.1.0",
+      "singleton": true,
+      "strictVersion": true,
+      "version": "17.3.3",
+      "dev": {
+        "entryPoint": "C:/src/Angular/pilot/microfrontend-with-native-feeration/micro-fe-workspace/node_modules/@angular/forms/fesm2022/forms.mjs"
+      }
+    },
+    {
+      "packageName": "@angular/platform-browser",
+      "outFileName": "_angular_platform_browser-17_3_3-dev.js",
+      "requiredVersion": "^17.1.0",
+      "singleton": true,
+      "strictVersion": true,
+      "version": "17.3.3",
+      "dev": {
+        "entryPoint": "C:/src/Angular/pilot/microfrontend-with-native-feeration/micro-fe-workspace/node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs"
+      }
+    },
+    {
+      "packageName": "@angular/platform-browser/animations",
+      "outFileName": "_angular_platform_browser_animations-17_3_3-dev.js",
+      "requiredVersion": "^17.1.0",
+      "singleton": true,
+      "strictVersion": true,
+      "version": "17.3.3",
+      "dev": {
+        "entryPoint": "C:/src/Angular/pilot/microfrontend-with-native-feeration/micro-fe-workspace/node_modules/@angular/platform-browser/fesm2022/animations.mjs"
+      }
+    },
+    {
+      "packageName": "@angular/platform-browser/animations/async",
+      "outFileName": "_angular_platform_browser_animations_async-17_3_3-dev.js",
+      "requiredVersion": "^17.1.0",
+      "singleton": true,
+      "strictVersion": true,
+      "version": "17.3.3",
+      "dev": {
+        "entryPoint": "C:/src/Angular/pilot/microfrontend-with-native-feeration/micro-fe-workspace/node_modules/@angular/platform-browser/fesm2022/animations/async.mjs"
+      }
+    },
+    {
+      "packageName": "@angular/platform-browser-dynamic",
+      "outFileName": "_angular_platform_browser_dynamic-17_3_3-dev.js",
+      "requiredVersion": "^17.1.0",
+      "singleton": true,
+      "strictVersion": true,
+      "version": "17.3.3",
+      "dev": {
+        "entryPoint": "C:/src/Angular/pilot/microfrontend-with-native-feeration/micro-fe-workspace/node_modules/@angular/platform-browser-dynamic/fesm2022/platform-browser-dynamic.mjs"
+      }
+    },
+    {
+      "packageName": "@angular/router",
+      "outFileName": "_angular_router-17_3_3-dev.js",
+      "requiredVersion": "^17.1.0",
+      "singleton": true,
+      "strictVersion": true,
+      "version": "17.3.3",
+      "dev": {
+        "entryPoint": "C:/src/Angular/pilot/microfrontend-with-native-feeration/micro-fe-workspace/node_modules/@angular/router/fesm2022/router.mjs"
+      }
+    },
+    {
+      "packageName": "@ng-bootstrap/ng-bootstrap",
+      "outFileName": "_ng_bootstrap_ng_bootstrap-16_0_0-dev.js",
+      "requiredVersion": "^16.0.0",
+      "singleton": true,
+      "strictVersion": true,
+      "version": "16.0.0",
+      "dev": {
+        "entryPoint": "C:/src/Angular/pilot/microfrontend-with-native-feeration/micro-fe-workspace/node_modules/@ng-bootstrap/ng-bootstrap/fesm2022/ng-bootstrap.mjs"
+      }
+    },
+    {
+      "packageName": "bootstrap",
+      "outFileName": "bootstrap-5_3_3-dev.js",
+      "requiredVersion": "^5.3.3",
+      "singleton": true,
+      "strictVersion": true,
+      "version": "5.3.3",
+      "dev": {
+        "entryPoint": "C:/src/Angular/pilot/microfrontend-with-native-feeration/micro-fe-workspace/node_modules/bootstrap/dist/js/bootstrap.esm.js"
+      }
+    },
+    {
+      "packageName": "rxjs",
+      "outFileName": "rxjs-7_8_1-dev.js",
+      "requiredVersion": "~7.8.0",
+      "singleton": true,
+      "strictVersion": true,
+      "version": "7.8.1",
+      "dev": {
+        "entryPoint": "C:/src/Angular/pilot/microfrontend-with-native-feeration/micro-fe-workspace/node_modules/rxjs/dist/esm5/index.js"
+      }
+    },
+    {
+      "packageName": "rxjs/operators",
+      "outFileName": "rxjs_operators-7_8_1-dev.js",
+      "requiredVersion": "~7.8.0",
+      "singleton": true,
+      "strictVersion": true,
+      "version": "7.8.1",
+      "dev": {
+        "entryPoint": "C:/src/Angular/pilot/microfrontend-with-native-feeration/micro-fe-workspace/node_modules/rxjs/dist/esm5/operators/index.js"
+      }
+    },
+    {
+      "packageName": "tslib",
+      "outFileName": "tslib-2_6_2-dev.js",
+      "requiredVersion": "^2.3.0",
+      "singleton": true,
+      "strictVersion": true,
+      "version": "2.6.2",
+      "dev": {
+        "entryPoint": "C:/src/Angular/pilot/microfrontend-with-native-feeration/micro-fe-workspace/node_modules/tslib/tslib.es6.mjs"
+      }
+    },
+    {
+      "packageName": "shared-lib",
+      "outFileName": "shared_lib.js",
+      "requiredVersion": "",
+      "singleton": true,
+      "strictVersion": false,
+      "version": "",
+      "dev": {
+        "entryPoint": "C:/src/Angular/pilot/microfrontend-with-native-feeration/micro-fe-workspace/dist/shared-lib"
+      }
+    }
+  ],
+  "exposes": [
+    {
+      "key": "./Component",
+      "outFileName": "Component.js",
+      "dev": {
+        "entryPoint": "C:/src/Angular/pilot/microfrontend-with-native-feeration/micro-fe-workspace/projects/microfrontend-a/src/app/app.component.ts"
+      }
+    }
+  ]
+}

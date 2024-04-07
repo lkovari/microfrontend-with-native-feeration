@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["projects/microfrontend-b/src/app/app.component.scss"],
+  "sourcesContent": ["ul {\r\n    list-style-type: none;\r\n}"],
+  "mappings": ";AAAA;AACI,mBAAA;;",
+  "names": []
+}
