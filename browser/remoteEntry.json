@@ -1,5 +1,5 @@
 {
-  "name": "microfrontend-a",
+  "name": "",
   "shared": [
     {
       "packageName": "@angular/animations",
@@ -162,10 +162,5 @@
       "version": ""
     }
   ],
-  "exposes": [
-    {
-      "key": "./Component",
-      "outFileName": "Component-DRF5GFOI.js"
-    }
-  ]
+  "exposes": []
 }

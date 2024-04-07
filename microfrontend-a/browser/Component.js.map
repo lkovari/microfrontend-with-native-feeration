@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../projects/microfrontend-a/src/app/app.component.ts", "../../../projects/microfrontend-a/src/app/app.component.html"],
-  "sourcesContent": ["import { Component } from '@angular/core';\r\nimport { RouterOutlet } from '@angular/router';\r\n\r\n@Component({\r\n  selector: 'app-mfe-a-root',\r\n  standalone: true,\r\n  imports: [RouterOutlet],\r\n  templateUrl: './app.component.html',\r\n  styleUrl: './app.component.scss'\r\n})\r\nexport class AppComponent {\r\n  title = 'Micro Frontend A';\r\n}\r\n", "<h2 style=\"text-align: center;\">This is a {{ title }} (Remote) app is running. 🎉</h2>"],
-  "mappings": ";AAAA,SAAS,iBAAiB;AAC1B,SAAS,oBAAoB;;AASvB,IAAO,eAAP,MAAO,cAAY;EAPzB,cAAA;AAQE,SAAA,QAAQ;;;;uBADG,eAAY;IAAA;EAAA;;4EAAZ,eAAY,WAAA,CAAA,CAAA,gBAAA,CAAA,GAAA,YAAA,MAAA,UAAA,CAAA,gCAAA,GAAA,OAAA,GAAA,MAAA,GAAA,QAAA,CAAA,CAAA,GAAA,cAAA,QAAA,CAAA,GAAA,UAAA,SAAA,sBAAA,IAAA,KAAA;AAAA,UAAA,KAAA,GAAA;ACVzB,QAAA,4BAAA,GAAA,MAAA,CAAA;AAAgC,QAAA,oBAAA,CAAA;AAAiD,QAAA,0BAAA;;;AAAjD,QAAA,uBAAA;AAAA,QAAA,gCAAA,cAAA,IAAA,OAAA,qCAAA;;;;;;gFDUnB,cAAY,EAAA,WAAA,gBAAA,UAAA,yDAAA,YAAA,GAAA,CAAA;AAAA,GAAA;",
-  "names": []
-}
