@@ -99,6 +99,14 @@
 					},
 					"configurations": {
 						"production": {
+							"optimization": {
+								"scripts": true,
+								"styles": {
+									"minify": true,
+									"inlineCritical": false
+								},
+								"fonts": true
+							},							
 							"budgets": [
 								{
 									"type": "initial",
@@ -226,6 +234,14 @@
 					},
 					"configurations": {
 						"production": {
+							"optimization": {
+								"scripts": true,
+								"styles": {
+									"minify": true,
+									"inlineCritical": false
+								},
+								"fonts": true
+							},
 							"budgets": [
 								{
 									"type": "initial",
@@ -353,6 +369,14 @@
 					},
 					"configurations": {
 						"production": {
+							"optimization": {
+								"scripts": true,
+								"styles": {
+									"minify": true,
+									"inlineCritical": false
+								},
+								"fonts": true
+							},
 							"budgets": [
 								{
 									"type": "initial",
