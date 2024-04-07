@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["projects/shell/src/app/app.component.scss"],
+  "sourcesContent": [".container {\r\n  display: flex;\r\n  flex-direction: column;\r\n  height: 100vh;\r\n}\r\n\r\n.title-bar,\r\n.nav-bar,\r\n.footer {\r\n  flex: 0 0 auto; \r\n  border: 1px solid #23f0f0;\r\n  border-radius: 10px;\r\n}\r\n\r\n.body-part {\r\n  flex: 1 0 auto; \r\n  border: 1px solid #23f0f0;\r\n  border-radius: 10px;\r\n  padding: 1rem;\r\n  overflow-y: auto;\r\n}\r\n\r\n.nav-bar ul {\r\n  list-style-type: none;\r\n  padding: 0;\r\n}\r\n"],
+  "mappings": ";AAAA,CAAA;AACE,WAAA;AACA,kBAAA;AACA,UAAA;;AAGF,CAAA;AAAA,CAAA;AAAA,CAAA;AAGE,QAAA,EAAA,EAAA;AACA,UAAA,IAAA,MAAA;AACA,iBAAA;;AAGF,CAAA;AACE,QAAA,EAAA,EAAA;AACA,UAAA,IAAA,MAAA;AACA,iBAAA;AACA,WAAA;AACA,cAAA;;AAGF,CAhBA,QAgBA;AACE,mBAAA;AACA,WAAA;;",
+  "names": []
+}

@@ -1,7 +1,0 @@
-/*
- * Public API Surface of shared-lib
- */
-export * from './lib/shared-lib.service';
-export * from './lib/shared-lib.component';
-export * from './lib/angular-version/angular-version.component';
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicHVibGljLWFwaS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uLy4uL3Byb2plY3RzL3NoYXJlZC1saWIvc3JjL3B1YmxpYy1hcGkudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7O0dBRUc7QUFFSCxjQUFjLDBCQUEwQixDQUFDO0FBQ3pDLGNBQWMsNEJBQTRCLENBQUM7QUFDM0MsY0FBYyxpREFBaUQsQ0FBQyIsInNvdXJjZXNDb250ZW50IjpbIi8qXHJcbiAqIFB1YmxpYyBBUEkgU3VyZmFjZSBvZiBzaGFyZWQtbGliXHJcbiAqL1xyXG5cclxuZXhwb3J0ICogZnJvbSAnLi9saWIvc2hhcmVkLWxpYi5zZXJ2aWNlJztcclxuZXhwb3J0ICogZnJvbSAnLi9saWIvc2hhcmVkLWxpYi5jb21wb25lbnQnO1xyXG5leHBvcnQgKiBmcm9tICcuL2xpYi9hbmd1bGFyLXZlcnNpb24vYW5ndWxhci12ZXJzaW9uLmNvbXBvbmVudCc7XHJcbiJdfQ==

@@ -1,5 +1,5 @@
 {
-  "name": "microfrontend-b",
+  "name": "",
   "shared": [
     {
       "packageName": "@angular/animations",
@@ -222,13 +222,5 @@
       }
     }
   ],
-  "exposes": [
-    {
-      "key": "./Component",
-      "outFileName": "Component.js",
-      "dev": {
-        "entryPoint": "C:/src/Angular/pilot/microfrontend-with-native-feeration/micro-fe-workspace/projects/microfrontend-b/src/app/app.component.ts"
-      }
-    }
-  ]
+  "exposes": []
 }
