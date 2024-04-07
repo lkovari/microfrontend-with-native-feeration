@@ -3,6 +3,7 @@ import { RouterLink, RouterOutlet } from '@angular/router';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AngularVersionComponent } from 'shared-lib';
 
+
 @Component({
   selector: 'app-shell-root',
   standalone: true,
@@ -11,5 +12,5 @@ import { AngularVersionComponent } from 'shared-lib';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'Micro Frontend Shell';
+  title = 'Micro Frontend Shell (host)';
 }
