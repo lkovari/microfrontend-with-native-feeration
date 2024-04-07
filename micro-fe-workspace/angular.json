@@ -19,9 +19,11 @@
 					"options": {
 						"styles": [
 							"projects/shell/src/styles.scss",						
-							"node_modules/bootstrap/scss/bootstrap.scss"						
+							"node_modules/bootstrap/dist/css/bootstrap.min.css"
 						],
-						"scripts": []						
+						"scripts": [
+							"node_modules/bootstrap/dist/js/bootstrap.js"
+						]						
 					},
 					"configurations": {
 						"production": {
@@ -63,10 +65,12 @@
 							"projects/shell/src/assets"
 						],
 						"styles": [
-							"projects/shell/src/styles.scss",
-							"node_modules/bootstrap/scss/bootstrap.scss"
+							"projects/shell/src/styles.scss",						
+							"node_modules/bootstrap/dist/css/bootstrap.min.css"
 						],
-						"scripts": []
+						"scripts": [
+							"node_modules/bootstrap/dist/js/bootstrap.js"
+						]
 					}
 				},
 				"esbuild": {
@@ -86,10 +90,12 @@
 							"projects/shell/src/assets"
 						],
 						"styles": [
-							"projects/shell/src/styles.scss",
-							"node_modules/bootstrap/scss/bootstrap.scss"
+							"projects/shell/src/styles.scss",						
+							"node_modules/bootstrap/dist/css/bootstrap.min.css"
 						],
-						"scripts": []
+						"scripts": [
+							"node_modules/bootstrap/dist/js/bootstrap.js"
+						]
 					},
 					"configurations": {
 						"production": {
@@ -186,9 +192,12 @@
 							"projects/microfrontend-a/src/assets"
 						],
 						"styles": [
-							"projects/microfrontend-a/src/styles.scss"
+							"projects/microfrontend-a/src/styles.scss",						
+							"node_modules/bootstrap/dist/css/bootstrap.min.css"
 						],
-						"scripts": []
+						"scripts": [
+							"node_modules/bootstrap/dist/js/bootstrap.js"
+						]
 					}
 				},
 				"esbuild": {
@@ -208,9 +217,12 @@
 							"projects/microfrontend-a/src/assets"
 						],
 						"styles": [
-							"projects/microfrontend-a/src/styles.scss"
+							"projects/microfrontend-a/src/styles.scss",						
+							"node_modules/bootstrap/dist/css/bootstrap.min.css"
 						],
-						"scripts": []
+						"scripts": [
+							"node_modules/bootstrap/dist/js/bootstrap.js"
+						]
 					},
 					"configurations": {
 						"production": {
@@ -307,9 +319,12 @@
 							"projects/microfrontend-b/src/assets"
 						],
 						"styles": [
-							"projects/microfrontend-b/src/styles.scss"
+							"projects/microfrontend-b/src/styles.scss",						
+							"node_modules/bootstrap/dist/css/bootstrap.min.css"
 						],
-						"scripts": []
+						"scripts": [
+							"node_modules/bootstrap/dist/js/bootstrap.js"
+						]
 					}
 				},
 				"esbuild": {
@@ -329,9 +344,12 @@
 							"projects/microfrontend-b/src/assets"
 						],
 						"styles": [
-							"projects/microfrontend-b/src/styles.scss"
+							"projects/microfrontend-b/src/styles.scss",						
+							"node_modules/bootstrap/dist/css/bootstrap.min.css"
 						],
-						"scripts": []
+						"scripts": [
+							"node_modules/bootstrap/dist/js/bootstrap.js"
+						]
 					},
 					"configurations": {
 						"production": {
