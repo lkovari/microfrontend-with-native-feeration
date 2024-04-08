@@ -14,10 +14,6 @@
     "build-prod-b": "ng build microfrontend-b --configuration production",
     "build-prod-a": "ng build microfrontend-a --configuration production",
     "build-prod-s": "ng build shell --configuration production",
-    "gitdeploy": "gh-pages -d dist",
-    "deployghpagesshell": "gh-pages -d projects/shell/dist/shell",
-    "deployghpagesmfa": "gh-pages -d projects/microfrontend-a/dist/microfrontend-a",
-    "deployghpagesmfb": "gh-pages -d projects/microfrontend-b/dist/microfrontend-b",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
@@ -44,7 +40,6 @@
     "@angular/cli": "^17.1.3",
     "@angular/compiler-cli": "^17.1.0",
     "@types/jasmine": "~5.1.0",
-    "gh-pages": "^6.1.1",
     "jasmine-core": "~5.1.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",

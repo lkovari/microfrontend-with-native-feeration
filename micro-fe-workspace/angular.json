@@ -76,7 +76,7 @@
 				"esbuild": {
 					"builder": "@angular-devkit/build-angular:application",
 					"options": {
-						"outputPath": "dist",
+						"outputPath": "dist/shell",
 						"index": "projects/shell/src/index.html",
 						"browser": "projects/shell/src/main.ts",
 						"polyfills": [
