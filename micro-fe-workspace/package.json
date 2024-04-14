@@ -13,7 +13,7 @@
     "build-prod-b": "ng build microfrontend-b --configuration production",
     "build-prod-a": "ng build microfrontend-a --configuration production",
     "build-prod-s": "ng build shell --configuration production",
-    "postbuild": "mv dist/shell/browser/* dist/shell/ && rm -r dist/shell/browser && mv dist/microfrontend-a/browser/* dist/microfrontend-a/ && rm -r dist/microfrontend-a/browser && mv dist/microfrontend-b/browser/* dist/microfrontend-b/ && rm -r dist/microfrontend-b/browser && cp indexd.html dist/index.html",
+    "postbuild": "mv dist/shell/browser/* dist/shell/ && rm -r dist/shell/browser && mv dist/microfrontend-a/browser/* dist/microfrontend-a/ && rm -r dist/microfrontend-a/browser && mv dist/microfrontend-b/browser/* dist/microfrontend-b/ && rm -r dist/microfrontend-b/browser && cp indexd.html dist/index.html && cp _redirects dist/_redirects",
     "build": "ng build --configuration development",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
