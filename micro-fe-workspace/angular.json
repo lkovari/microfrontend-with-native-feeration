@@ -76,10 +76,7 @@
 				"esbuild": {
 					"builder": "@angular-devkit/build-angular:application",
 					"options": {
-						"outputPath": {
-							"base": "dist/shell",
-							"browser": ""
-						},
+						"outputPath": "dist/shell",
 						"index": "projects/shell/src/index.html",
 						"browser": "projects/shell/src/main.ts",
 						"polyfills": [
@@ -214,10 +211,7 @@
 				"esbuild": {
 					"builder": "@angular-devkit/build-angular:application",
 					"options": {
-						"outputPath": {
-							"base": "dist/microfrontend-a",
-							"browser": ""
-						},
+						"outputPath": "dist/microfrontend-a",
 						"index": "projects/microfrontend-a/src/index.html",
 						"browser": "projects/microfrontend-a/src/main.ts",
 						"polyfills": [
@@ -352,10 +346,7 @@
 				"esbuild": {
 					"builder": "@angular-devkit/build-angular:application",
 					"options": {
-						"outputPath": {
-							"base": "dist/microfrontend-b",
-							"browser": ""
-						},						
+						"outputPath": "dist/microfrontend-b",
 						"index": "projects/microfrontend-b/src/index.html",
 						"browser": "projects/microfrontend-b/src/main.ts",
 						"polyfills": [
