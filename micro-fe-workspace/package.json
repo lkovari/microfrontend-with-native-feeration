@@ -13,7 +13,6 @@
     "build-prod-b": "ng build microfrontend-b --configuration production",
     "build-prod-a": "ng build microfrontend-a --configuration production",
     "build-prod-s": "ng build shell --configuration production",
-    "postbuild": "cp indexd.html dist/index.html",
     "build": "npm run build:shared-lib && npm run build-prod-b && npm run build-prod-a && npm run postbuild && npm run build-prod-s",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
