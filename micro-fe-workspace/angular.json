@@ -1,431 +1,444 @@
 {
-	"$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-	"version": 1,
-	"newProjectRoot": "projects",
-	"projects": {
-		"shell": {
-			"projectType": "application",
-			"schematics": {
-				"@schematics/angular:component": {
-					"style": "scss"
-				}
-			},
-			"root": "projects/shell",
-			"sourceRoot": "projects/shell/src",
-			"prefix": "app",
-			"architect": {
-				"build": {
-					"builder": "@angular-architects/native-federation:build",
-					"options": {
-						"styles": [
-							"projects/shell/src/styles.scss",						
-							"node_modules/bootstrap/dist/css/bootstrap.min.css"
-						],
-						"scripts": [
-							"node_modules/bootstrap/dist/js/bootstrap.js"
-						]						
-					},
-					"configurations": {
-						"production": {
-							"target": "shell:esbuild:production"
-						},
-						"development": {
-							"target": "shell:esbuild:development",
-							"dev": true
-						}
-					},
-					"defaultConfiguration": "production"
-				},
-				"serve": {
-					"builder": "@angular-architects/native-federation:build",
-					"options": {
-						"target": "shell:serve-original:development",
-						"rebuildDelay": 0,
-						"dev": true,
-						"port": 0
-					}
-				},
-				"extract-i18n": {
-					"builder": "@angular-devkit/build-angular:extract-i18n",
-					"options": {
-						"buildTarget": "shell:build"
-					}
-				},
-				"test": {
-					"builder": "@angular-devkit/build-angular:karma",
-					"options": {
-						"polyfills": [
-							"zone.js",
-							"zone.js/testing"
-						],
-						"tsConfig": "projects/shell/tsconfig.spec.json",
-						"inlineStyleLanguage": "scss",
-						"assets": [
-							"projects/shell/src/favicon.ico",
-							"projects/shell/src/assets"
-						],
-						"styles": [
-							"projects/shell/src/styles.scss",						
-							"node_modules/bootstrap/dist/css/bootstrap.min.css"
-						],
-						"scripts": [
-							"node_modules/bootstrap/dist/js/bootstrap.js"
-						]
-					}
-				},
-				"esbuild": {
-					"builder": "@angular-devkit/build-angular:application",
-					"options": {
-						"outputPath": "dist/shell",
-						"index": "projects/shell/src/index.html",
-						"browser": "projects/shell/src/main.ts",
-						"polyfills": [
-							"zone.js",
-							"es-module-shims"
-						],
-						"tsConfig": "projects/shell/tsconfig.app.json",
-						"inlineStyleLanguage": "scss",
-						"assets": [
-							"projects/shell/src/favicon.ico",
-							"projects/shell/src/assets"
-						],
-						"styles": [
-							"projects/shell/src/styles.scss",						
-							"node_modules/bootstrap/dist/css/bootstrap.min.css"
-						],
-						"scripts": [
-							"node_modules/bootstrap/dist/js/bootstrap.js"
-						]
-					},
-					"configurations": {
-						"production": {
-							"optimization": {
-								"scripts": true,
-								"styles": {
-									"minify": true,
-									"inlineCritical": false
-								},
-								"fonts": true
-							},							
-							"budgets": [
-								{
-									"type": "initial",
-									"maximumWarning": "500kb",
-									"maximumError": "1mb"
-								},
-								{
-									"type": "anyComponentStyle",
-									"maximumWarning": "2kb",
-									"maximumError": "4kb"
-								}
-							],
-							"outputHashing": "all"
-						},
-						"development": {
-							"optimization": false,
-							"extractLicenses": false,
-							"sourceMap": true
-						}
-					},
-					"defaultConfiguration": "production"
-				},
-				"serve-original": {
-					"builder": "@angular-devkit/build-angular:dev-server",
-					"configurations": {
-						"production": {
-							"buildTarget": "shell:esbuild:production"
-						},
-						"development": {
-							"buildTarget": "shell:esbuild:development"
-						}
-					},
-					"defaultConfiguration": "development",
-					"options": {
-						"port": 4200
-					}
-				}
-			}
-		},
-		"microfrontend-a": {
-			"projectType": "application",
-			"schematics": {
-				"@schematics/angular:component": {
-					"style": "scss"
-				}
-			},
-			"root": "projects/microfrontend-a",
-			"sourceRoot": "projects/microfrontend-a/src",
-			"prefix": "app",
-			"architect": {
-				"build": {
-					"builder": "@angular-architects/native-federation:build",
-					"options": {},
-					"configurations": {
-						"production": {
-							"target": "microfrontend-a:esbuild:production"
-						},
-						"development": {
-							"target": "microfrontend-a:esbuild:development",
-							"dev": true
-						}
-					},
-					"defaultConfiguration": "production"
-				},
-				"serve": {
-					"builder": "@angular-architects/native-federation:build",
-					"options": {
-						"target": "microfrontend-a:serve-original:development",
-						"rebuildDelay": 0,
-						"dev": true,
-						"port": 0
-					}
-				},
-				"extract-i18n": {
-					"builder": "@angular-devkit/build-angular:extract-i18n",
-					"options": {
-						"buildTarget": "microfrontend-a:build"
-					}
-				},
-				"test": {
-					"builder": "@angular-devkit/build-angular:karma",
-					"options": {
-						"polyfills": [
-							"zone.js",
-							"zone.js/testing"
-						],
-						"tsConfig": "projects/microfrontend-a/tsconfig.spec.json",
-						"inlineStyleLanguage": "scss",
-						"assets": [
-							"projects/microfrontend-a/src/favicon.ico",
-							"projects/microfrontend-a/src/assets"
-						],
-						"styles": [
-							"projects/microfrontend-a/src/styles.scss",						
-							"node_modules/bootstrap/dist/css/bootstrap.min.css"
-						],
-						"scripts": [
-							"node_modules/bootstrap/dist/js/bootstrap.js"
-						]
-					}
-				},
-				"esbuild": {
-					"builder": "@angular-devkit/build-angular:application",
-					"options": {
-						"outputPath": "dist/microfrontend-a",
-						"index": "projects/microfrontend-a/src/index.html",
-						"browser": "projects/microfrontend-a/src/main.ts",
-						"polyfills": [
-							"zone.js",
-							"es-module-shims"
-						],
-						"tsConfig": "projects/microfrontend-a/tsconfig.app.json",
-						"inlineStyleLanguage": "scss",
-						"assets": [
-							"projects/microfrontend-a/src/favicon.ico",
-							"projects/microfrontend-a/src/assets"
-						],
-						"styles": [
-							"projects/microfrontend-a/src/styles.scss",						
-							"node_modules/bootstrap/dist/css/bootstrap.min.css"
-						],
-						"scripts": [
-							"node_modules/bootstrap/dist/js/bootstrap.js"
-						]
-					},
-					"configurations": {
-						"production": {
-							"optimization": {
-								"scripts": true,
-								"styles": {
-									"minify": true,
-									"inlineCritical": false
-								},
-								"fonts": true
-							},
-							"budgets": [
-								{
-									"type": "initial",
-									"maximumWarning": "500kb",
-									"maximumError": "1mb"
-								},
-								{
-									"type": "anyComponentStyle",
-									"maximumWarning": "2kb",
-									"maximumError": "4kb"
-								}
-							],
-							"outputHashing": "all"
-						},
-						"development": {
-							"optimization": false,
-							"extractLicenses": false,
-							"sourceMap": true
-						}
-					},
-					"defaultConfiguration": "production"
-				},
-				"serve-original": {
-					"builder": "@angular-devkit/build-angular:dev-server",
-					"configurations": {
-						"production": {
-							"buildTarget": "microfrontend-a:esbuild:production"
-						},
-						"development": {
-							"buildTarget": "microfrontend-a:esbuild:development"
-						}
-					},
-					"defaultConfiguration": "development",
-					"options": {
-						"port": 4201
-					}
-				}
-			}
-		},
-		"microfrontend-b": {
-			"projectType": "application",
-			"schematics": {
-				"@schematics/angular:component": {
-					"style": "scss"
-				}
-			},
-			"root": "projects/microfrontend-b",
-			"sourceRoot": "projects/microfrontend-b/src",
-			"prefix": "app",
-			"architect": {
-				"build": {
-					"builder": "@angular-architects/native-federation:build",
-					"options": {},
-					"configurations": {
-						"production": {
-							"target": "microfrontend-b:esbuild:production"
-						},
-						"development": {
-							"target": "microfrontend-b:esbuild:development",
-							"dev": true
-						}
-					},
-					"defaultConfiguration": "production"
-				},
-				"serve": {
-					"builder": "@angular-architects/native-federation:build",
-					"options": {
-						"target": "microfrontend-b:serve-original:development",
-						"rebuildDelay": 0,
-						"dev": true,
-						"port": 0
-					}
-				},
-				"extract-i18n": {
-					"builder": "@angular-devkit/build-angular:extract-i18n",
-					"options": {
-						"buildTarget": "microfrontend-b:build"
-					}
-				},
-				"test": {
-					"builder": "@angular-devkit/build-angular:karma",
-					"options": {
-						"polyfills": [
-							"zone.js",
-							"zone.js/testing"
-						],
-						"tsConfig": "projects/microfrontend-b/tsconfig.spec.json",
-						"inlineStyleLanguage": "scss",
-						"assets": [
-							"projects/microfrontend-b/src/favicon.ico",
-							"projects/microfrontend-b/src/assets"
-						],
-						"styles": [
-							"projects/microfrontend-b/src/styles.scss",						
-							"node_modules/bootstrap/dist/css/bootstrap.min.css"
-						],
-						"scripts": [
-							"node_modules/bootstrap/dist/js/bootstrap.js"
-						]
-					}
-				},
-				"esbuild": {
-					"builder": "@angular-devkit/build-angular:application",
-					"options": {
-						"outputPath": "dist/microfrontend-b",
-						"index": "projects/microfrontend-b/src/index.html",
-						"browser": "projects/microfrontend-b/src/main.ts",
-						"polyfills": [
-							"zone.js",
-							"es-module-shims"
-						],
-						"tsConfig": "projects/microfrontend-b/tsconfig.app.json",
-						"inlineStyleLanguage": "scss",
-						"assets": [
-							"projects/microfrontend-b/src/favicon.ico",
-							"projects/microfrontend-b/src/assets"
-						],
-						"styles": [
-							"projects/microfrontend-b/src/styles.scss",						
-							"node_modules/bootstrap/dist/css/bootstrap.min.css"
-						],
-						"scripts": [
-							"node_modules/bootstrap/dist/js/bootstrap.js"
-						]
-					},
-					"configurations": {
-						"production": {
-							"optimization": {
-								"scripts": true,
-								"styles": {
-									"minify": true,
-									"inlineCritical": false
-								},
-								"fonts": true
-							},
-							"budgets": [
-								{
-									"type": "initial",
-									"maximumWarning": "500kb",
-									"maximumError": "1mb"
-								},
-								{
-									"type": "anyComponentStyle",
-									"maximumWarning": "2kb",
-									"maximumError": "4kb"
-								}
-							],
-							"outputHashing": "all"
-						},
-						"development": {
-							"optimization": false,
-							"extractLicenses": false,
-							"sourceMap": true
-						}
-					},
-					"defaultConfiguration": "production"
-				},
-				"serve-original": {
-					"builder": "@angular-devkit/build-angular:dev-server",
-					"configurations": {
-						"production": {
-							"buildTarget": "microfrontend-b:esbuild:production"
-						},
-						"development": {
-							"buildTarget": "microfrontend-b:esbuild:development"
-						}
-					},
-					"defaultConfiguration": "development",
-					"options": {
-						"port": 4202
-					}
-				}
-			}
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "shell": {
+      "projectType": "application",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
+      "root": "projects/shell",
+      "sourceRoot": "projects/shell/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-architects/native-federation:build",
+          "options": {
+            "outputPath": "dist/shell",
+            "styles": [
+              "projects/shell/src/styles.scss",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
+            ],
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.js"
+            ]
+          },
+          "configurations": {
+            "production": {
+              "target": "shell:esbuild:production"
+            },
+            "development": {
+              "target": "shell:esbuild:development",
+              "dev": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular-architects/native-federation:build",
+          "options": {
+            "target": "shell:serve-original:development",
+            "rebuildDelay": 0,
+            "dev": true,
+            "port": 0
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "buildTarget": "shell:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ],
+            "tsConfig": "projects/shell/tsconfig.spec.json",
+            "inlineStyleLanguage": "scss",
+            "assets": [
+              "projects/shell/src/favicon.ico",
+              "projects/shell/src/assets"
+            ],
+            "styles": [
+              "projects/shell/src/styles.scss",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
+            ],
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.js"
+            ]
+          }
+        },
+        "esbuild": {
+          "builder": "@angular-devkit/build-angular:application",
+          "options": {
+            "outputPath": "dist/shell",
+            "index": "projects/shell/src/index.html",
+            "browser": "projects/shell/src/main.ts",
+            "polyfills": [
+              "zone.js",
+              "es-module-shims"
+            ],
+            "tsConfig": "projects/shell/tsconfig.app.json",
+            "inlineStyleLanguage": "scss",
+            "assets": [
+              "projects/shell/src/favicon.ico",
+              "projects/shell/src/assets"
+            ],
+            "styles": [
+              "projects/shell/src/styles.scss",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
+            ],
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.js"
+            ]
+          },
+          "configurations": {
+            "production": {
+              "optimization": {
+                "scripts": true,
+                "styles": {
+                  "minify": true,
+                  "inlineCritical": false
+                },
+                "fonts": true
+              },
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve-original": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "buildTarget": "shell:esbuild:production"
+            },
+            "development": {
+              "buildTarget": "shell:esbuild:development"
+            }
+          },
+          "defaultConfiguration": "development",
+          "options": {
+            "port": 4200
+          }
+        },
+        "deploy": {
+          "builder": "@netlify-builder/deploy:deploy",
+          "options": {
+            "outputPath": "dist/shell",
+            "netlifyToken": "nfp_kza23JmB29VaP2pF9VfxMkGzmhUeXqCafb16",
+            "siteId": "512385e3-9e67-4746-a3b4-cf8969b028e6"
+          }
+        }
+      }
+    },
+    "microfrontend-a": {
+      "projectType": "application",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
+      "root": "projects/microfrontend-a",
+      "sourceRoot": "projects/microfrontend-a/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-architects/native-federation:build",
+          "options": {
+            "outputPath": "dist/microfrontend-a"
+          },
+          "configurations": {
+            "production": {
+              "target": "microfrontend-a:esbuild:production"
+            },
+            "development": {
+              "target": "microfrontend-a:esbuild:development",
+              "dev": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular-architects/native-federation:build",
+          "options": {
+            "target": "microfrontend-a:serve-original:development",
+            "rebuildDelay": 0,
+            "dev": true,
+            "port": 0
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "buildTarget": "microfrontend-a:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ],
+            "tsConfig": "projects/microfrontend-a/tsconfig.spec.json",
+            "inlineStyleLanguage": "scss",
+            "assets": [
+              "projects/microfrontend-a/src/favicon.ico",
+              "projects/microfrontend-a/src/assets"
+            ],
+            "styles": [
+              "projects/microfrontend-a/src/styles.scss",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
+            ],
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.js"
+            ]
+          }
+        },
+        "esbuild": {
+          "builder": "@angular-devkit/build-angular:application",
+          "options": {
+            "outputPath": "dist/microfrontend-a",
+            "index": "projects/microfrontend-a/src/index.html",
+            "browser": "projects/microfrontend-a/src/main.ts",
+            "polyfills": [
+              "zone.js",
+              "es-module-shims"
+            ],
+            "tsConfig": "projects/microfrontend-a/tsconfig.app.json",
+            "inlineStyleLanguage": "scss",
+            "assets": [
+              "projects/microfrontend-a/src/favicon.ico",
+              "projects/microfrontend-a/src/assets"
+            ],
+            "styles": [
+              "projects/microfrontend-a/src/styles.scss",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
+            ],
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.js"
+            ]
+          },
+          "configurations": {
+            "production": {
+              "optimization": {
+                "scripts": true,
+                "styles": {
+                  "minify": true,
+                  "inlineCritical": false
+                },
+                "fonts": true
+              },
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve-original": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "buildTarget": "microfrontend-a:esbuild:production"
+            },
+            "development": {
+              "buildTarget": "microfrontend-a:esbuild:development"
+            }
+          },
+          "defaultConfiguration": "development",
+          "options": {
+            "port": 4201
+          }
+        }
+      }
+    },
+    "microfrontend-b": {
+      "projectType": "application",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
+      "root": "projects/microfrontend-b",
+      "sourceRoot": "projects/microfrontend-b/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-architects/native-federation:build",
+          "options": {
+            "outputPath": "dist/microfrontend-b"
+          },
+          "configurations": {
+            "production": {
+              "target": "microfrontend-b:esbuild:production"
+            },
+            "development": {
+              "target": "microfrontend-b:esbuild:development",
+              "dev": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular-architects/native-federation:build",
+          "options": {
+            "target": "microfrontend-b:serve-original:development",
+            "rebuildDelay": 0,
+            "dev": true,
+            "port": 0
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "buildTarget": "microfrontend-b:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ],
+            "tsConfig": "projects/microfrontend-b/tsconfig.spec.json",
+            "inlineStyleLanguage": "scss",
+            "assets": [
+              "projects/microfrontend-b/src/favicon.ico",
+              "projects/microfrontend-b/src/assets"
+            ],
+            "styles": [
+              "projects/microfrontend-b/src/styles.scss",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
+            ],
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.js"
+            ]
+          }
+        },
+        "esbuild": {
+          "builder": "@angular-devkit/build-angular:application",
+          "options": {
+            "outputPath": "dist/microfrontend-b",
+            "index": "projects/microfrontend-b/src/index.html",
+            "browser": "projects/microfrontend-b/src/main.ts",
+            "polyfills": [
+              "zone.js",
+              "es-module-shims"
+            ],
+            "tsConfig": "projects/microfrontend-b/tsconfig.app.json",
+            "inlineStyleLanguage": "scss",
+            "assets": [
+              "projects/microfrontend-b/src/favicon.ico",
+              "projects/microfrontend-b/src/assets"
+            ],
+            "styles": [
+              "projects/microfrontend-b/src/styles.scss",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
+            ],
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.js"
+            ]
+          },
+          "configurations": {
+            "production": {
+              "optimization": {
+                "scripts": true,
+                "styles": {
+                  "minify": true,
+                  "inlineCritical": false
+                },
+                "fonts": true
+              },
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve-original": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "buildTarget": "microfrontend-b:esbuild:production"
+            },
+            "development": {
+              "buildTarget": "microfrontend-b:esbuild:development"
+            }
+          },
+          "defaultConfiguration": "development",
+          "options": {
+            "port": 4202
+          }
+        }
+      }
     },
     "shared-lib": {
       "projectType": "library",
       "root": "projects/shared-lib",
       "sourceRoot": "projects/shared-lib/src",
       "prefix": "lib",
-	  "schematics": {
-		"@schematics/angular:component": {
-		  "style": "scss"
-		}
-	  },
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
@@ -454,5 +467,5 @@
         }
       }
     }
-	}
+  }
 }
