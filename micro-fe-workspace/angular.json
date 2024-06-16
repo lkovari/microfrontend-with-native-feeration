@@ -19,11 +19,9 @@
 					"options": {
 						"styles": [
 							"projects/shell/src/styles.scss",						
-							"node_modules/bootstrap/dist/css/bootstrap.min.css"
+							"node_modules/bootstrap/scss/bootstrap.scss"						
 						],
-						"scripts": [
-							"node_modules/bootstrap/dist/js/bootstrap.js"
-						]						
+						"scripts": []						
 					},
 					"configurations": {
 						"production": {
@@ -65,12 +63,10 @@
 							"projects/shell/src/assets"
 						],
 						"styles": [
-							"projects/shell/src/styles.scss",						
-							"node_modules/bootstrap/dist/css/bootstrap.min.css"
+							"projects/shell/src/styles.scss",
+							"node_modules/bootstrap/scss/bootstrap.scss"
 						],
-						"scripts": [
-							"node_modules/bootstrap/dist/js/bootstrap.js"
-						]
+						"scripts": []
 					}
 				},
 				"esbuild": {
@@ -93,23 +89,13 @@
 							"projects/shell/src/assets"
 						],
 						"styles": [
-							"projects/shell/src/styles.scss",						
-							"node_modules/bootstrap/dist/css/bootstrap.min.css"
+							"projects/shell/src/styles.scss",
+							"node_modules/bootstrap/scss/bootstrap.scss"
 						],
-						"scripts": [
-							"node_modules/bootstrap/dist/js/bootstrap.js"
-						]
+						"scripts": []
 					},
 					"configurations": {
 						"production": {
-							"optimization": {
-								"scripts": true,
-								"styles": {
-									"minify": true,
-									"inlineCritical": false
-								},
-								"fonts": true
-							},							
 							"budgets": [
 								{
 									"type": "initial",
@@ -203,12 +189,9 @@
 							"projects/microfrontend-a/src/assets"
 						],
 						"styles": [
-							"projects/microfrontend-a/src/styles.scss",						
-							"node_modules/bootstrap/dist/css/bootstrap.min.css"
+							"projects/microfrontend-a/src/styles.scss"
 						],
-						"scripts": [
-							"node_modules/bootstrap/dist/js/bootstrap.js"
-						]
+						"scripts": []
 					}
 				},
 				"esbuild": {
@@ -231,23 +214,12 @@
 							"projects/microfrontend-a/src/assets"
 						],
 						"styles": [
-							"projects/microfrontend-a/src/styles.scss",						
-							"node_modules/bootstrap/dist/css/bootstrap.min.css"
+							"projects/microfrontend-a/src/styles.scss"
 						],
-						"scripts": [
-							"node_modules/bootstrap/dist/js/bootstrap.js"
-						]
+						"scripts": []
 					},
 					"configurations": {
 						"production": {
-							"optimization": {
-								"scripts": true,
-								"styles": {
-									"minify": true,
-									"inlineCritical": false
-								},
-								"fonts": true
-							},
 							"budgets": [
 								{
 									"type": "initial",
@@ -341,12 +313,9 @@
 							"projects/microfrontend-b/src/assets"
 						],
 						"styles": [
-							"projects/microfrontend-b/src/styles.scss",						
-							"node_modules/bootstrap/dist/css/bootstrap.min.css"
+							"projects/microfrontend-b/src/styles.scss"
 						],
-						"scripts": [
-							"node_modules/bootstrap/dist/js/bootstrap.js"
-						]
+						"scripts": []
 					}
 				},
 				"esbuild": {
@@ -369,23 +338,12 @@
 							"projects/microfrontend-b/src/assets"
 						],
 						"styles": [
-							"projects/microfrontend-b/src/styles.scss",						
-							"node_modules/bootstrap/dist/css/bootstrap.min.css"
+							"projects/microfrontend-b/src/styles.scss"
 						],
-						"scripts": [
-							"node_modules/bootstrap/dist/js/bootstrap.js"
-						]
+						"scripts": []
 					},
 					"configurations": {
 						"production": {
-							"optimization": {
-								"scripts": true,
-								"styles": {
-									"minify": true,
-									"inlineCritical": false
-								},
-								"fonts": true
-							},
 							"budgets": [
 								{
 									"type": "initial",

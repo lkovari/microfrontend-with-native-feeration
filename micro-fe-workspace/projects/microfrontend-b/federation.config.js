@@ -3,7 +3,7 @@ const { withNativeFederation, shareAll } = require('@angular-architects/native-f
 module.exports = withNativeFederation({
 
   name: 'microfrontend-b',
-  filename: 'remoteEntry.js',
+
   exposes: {
     './Component': './projects/microfrontend-b/src/app/app.component.ts',
   },
